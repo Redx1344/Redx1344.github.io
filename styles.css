@@ -1,0 +1,71 @@
+:root {
+    --text: #0e240a;
+    --background: #e6f7e3;
+    --primary: #b4e7ac;
+    --secondary: #bbe9b4;
+    --accent: #3ea22f;
+}
+
+/* Reset default styles and set background color for the navbar */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+    font-family: 'Poppins';
+}
+
+/* Style the navigation bar */
+nav {
+    background-color: var(--background);
+    display: flex;
+    justify-content: space-between; /* Pushes logo to the left and links to the right */
+    align-items: center; /* Vertically centers the logo and links */
+    padding: 10px;
+}
+
+.logo {
+    margin-right: auto; /* Pushes the logo to the left */
+    color: var(--text);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px; /* Add space between links */
+}
+
+/* Style the links in the navigation bar */
+nav a {
+    text-decoration: none;
+    color: var(--accent);
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--primary);
+}
+
+/* Style the hero section */
+.hero {
+    text-align: center;
+    padding: 100px;
+    color: #fff;
+    background: url('hero-background.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: var(--text);
+}
+
+.hero p {
+    font-size: 18px;
+    color: var(--accent);
+}
